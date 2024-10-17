@@ -6,12 +6,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      'react-bootstrap': 'node_modules/react-bootstrap',
-    },
-  },
-  build: {
-    rollupOptions: {
-      external: ['react-bootstrap'],
+      'react-bootstrap': 'react-bootstrap',
     },
   },
 });
