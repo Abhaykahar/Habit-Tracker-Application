@@ -8,7 +8,7 @@ import { HabitsProvider } from "./context/HabitsContext";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';               
 import NotificationPanel from "./components/NotificationPanel";
-import './app.css'
+import './App.css'
 
 function App() {
   return (
