@@ -1,4 +1,4 @@
-// src/components/HabitTracker.jsx
+
 import { useContext } from "react";
 import { HabitsContext } from "../context/HabitsContext";
 

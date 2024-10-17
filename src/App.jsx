@@ -1,10 +1,10 @@
-// src/App.jsx
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";          // Navigation header component
-import Dashboard from "./components/Dashboard";    // Dashboard component
-import HabitManager from "./components/HabitManager"; // Component for managing habits
-import HabitTracker from "./components/HabitTracker"; // Component for tracking habits
-import { HabitsProvider } from "./context/HabitsContext"; // Habits context for global state
+import Header from "./components/Header";        
+import Dashboard from "./components/Dashboard";    
+import HabitManager from "./components/HabitManager"; 
+import HabitTracker from "./components/HabitTracker"; 
+import { HabitsProvider } from "./context/HabitsContext"; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';               
 import NotificationPanel from "./components/NotificationPanel";
@@ -14,7 +14,7 @@ function App() {
   return (
     <HabitsProvider>
       <Router>
-        <Header />  {/* Navigation header */}
+        <Header />  
         <div className="container mt-4">
           <Routes>
             <Route path="/" element={<Dashboard />} />

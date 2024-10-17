@@ -1,4 +1,4 @@
-// src/components/HabitManager.jsx
+
 import { useContext, useState, useEffect } from "react";
 import { HabitsContext } from "../context/HabitsContext";
 
@@ -11,7 +11,7 @@ const HabitManager = () => {
   const [editingHabitId, setEditingHabitId] = useState(null);
   const [notification, setNotification] = useState("");
 
-  // Load existing habit details when editing
+
   useEffect(() => {
     if (editingHabitId) {
       const habitToEdit = habits.find(habit => habit.id === editingHabitId);
@@ -24,7 +24,7 @@ const HabitManager = () => {
     }
   }, [editingHabitId, habits]);
 
-  // Function to add or update a habit
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -38,7 +38,7 @@ const HabitManager = () => {
       setNotification("Habit updated successfully!");
     } else {
       const newHabit = {
-        id: Date.now(), // Unique ID based on timestamp
+        id: Date.now(),
         name: habitName,
         goal,
         startDate,
@@ -52,7 +52,7 @@ const HabitManager = () => {
     resetForm();
   };
 
-  // Function to reset the form
+
   const resetForm = () => {
     setHabitName("");
     setGoal("");
@@ -61,7 +61,7 @@ const HabitManager = () => {
     setEditingHabitId(null);
   };
 
-  // Function to delete a habit
+
   const handleDelete = (id) => {
     const updatedHabits = habits.filter(habit => habit.id !== id);
     setHabits(updatedHabits);
@@ -72,7 +72,7 @@ const HabitManager = () => {
     <div className="habit-manager p-4 border rounded shadow-sm mt-5">
       <h2 className="text-2xl font-bold mb-4 text-light text-center">Manage Your Habits</h2>
 
-      {/* Notification Section */}
+    
       {notification && <div className="alert alert-success">{notification}</div>}
 
       <div className="row">

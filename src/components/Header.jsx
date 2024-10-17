@@ -1,7 +1,7 @@
-// src/components/Header.jsx
+
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import './Header.css'; // Import the CSS file for styling
+import './Header.css';
 
 const Header = () => {
   return (

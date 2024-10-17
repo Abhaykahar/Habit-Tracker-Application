@@ -1,13 +1,13 @@
-// src/components/Dashboard.jsx
+
 import { useContext } from "react";
 import { HabitsContext } from "../context/HabitsContext";
 import NotificationPanel from "./NotificationPanel";
 
 const Dashboard = () => {
-  const { habits, removeHabit } = useContext(HabitsContext); // Assume removeHabit is provided by HabitsContext
+  const { habits, removeHabit } = useContext(HabitsContext); 
 
   const handleDelete = (id) => {
-    removeHabit(id); // Call the removeHabit function with the habit's id
+    removeHabit(id); 
   };
 
   return (
@@ -27,7 +27,7 @@ const Dashboard = () => {
               <p className={`text-sm font-medium ${habit.completed ? "text-green-600" : "text-red-600"}`}>
                 {habit.completed ? "Completed" : "Not Completed"}
               </p>
-              {/* Delete Button */}
+             
               <button
                 className="mt-4 bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600 bg-dark"
                 onClick={() => handleDelete(habit.id)}

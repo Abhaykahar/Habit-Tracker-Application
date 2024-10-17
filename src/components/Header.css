@@ -1,30 +1,30 @@
-/* src/components/Header.css */
+
 
 .nav-link {
-    transition: all 0.5s ease; /* Smooth transition for all links */
+    transition: all 0.5s ease; 
   }
   
-  /* Dashboard link hover effect */
+
   .dashboard-link:hover {
-    color: #ff6347; /* Tomato color */
+    color: #ff6347; 
     text-decoration: underline;
   }
   
-  /* Manage Habits link hover effect */
+  
   .manage-habits-link:hover {
-    color: #32cd32; /* LimeGreen color */
+    color: #32cd32; 
     text-decoration: underline;
   }
   
-  /* Tracker link hover effect */
+  
   .tracker-link:hover {
-    color: #1e90ff; /* DodgerBlue color */
+    color: #1e90ff; 
     text-decoration: underline;
   }
   
-  /* Notification link hover effect */
+ 
   .notification-link:hover {
-    color: #ff69b4; /* HotPink color */
+    color: #ff69b4; 
     text-decoration: underline;
   }
   

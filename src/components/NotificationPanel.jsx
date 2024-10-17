@@ -1,4 +1,4 @@
-// src/components/NotificationPanel.jsx
+
 import { useContext, useEffect, useState } from "react";
 import { HabitsContext } from "../context/HabitsContext";
 
@@ -7,7 +7,7 @@ const NotificationPanel = () => {
   const [notifications, setNotifications] = useState([]);
   const [motivationMessage, setMotivationMessage] = useState("");
 
-  // Load notifications for pending habits
+
   useEffect(() => {
     const pendingHabits = habits.filter((habit) => !habit.completed);
 
@@ -19,7 +19,7 @@ const NotificationPanel = () => {
     setNotifications(reminders);
   }, [habits]);
 
-  // Function to mark a habit as completed
+  
   const markHabitAsCompleted = (id) => {
     const updatedHabits = habits.map((habit) =>
       habit.id === id ? { ...habit, completed: true } : habit
@@ -29,7 +29,7 @@ const NotificationPanel = () => {
     displayMotivationalMessage();
   };
 
-  // Function to display a motivational message
+
   const displayMotivationalMessage = () => {
     const messages = [
       "Awesome! You're making steady progress!",
@@ -47,7 +47,7 @@ const NotificationPanel = () => {
       messages[Math.floor(Math.random() * messages.length)];
     setMotivationMessage(randomMessage);
 
-    // Clear motivational message after 3 seconds
+  
     setTimeout(() => {
       setMotivationMessage("");
     }, 3000);
